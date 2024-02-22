@@ -31,8 +31,21 @@ Clovaai [deep-text-recognition-benchmark](https://github.com/clovaai/deep-text-r
    test/word_3.png A
    ...
    ```
-```
-python create_lmdb_dataset.py --inputPath data/ --gtFile data/gt.txt --outputPath result/
-```   
+   - 실행
+    ```
+    python create_lmdb_dataset.py --inputPath data/ --gtFile data/gt.txt --outputPath result/
+    ```   
 4. `train.py`
-## Training
+   - train start
+   - 본 프로젝트에서는 TPS-ResNet-BiLSTM-Attn 구조 사용
+     - 해당 내용은 논문 `스포츠 중계 영상 내 OCR 성능개선을 위한 후처리기법 연구` 참고
+    
+    
+   ```
+   python train.py \
+    --train_data data_lmdb_release/training --valid_data data_lmdb_release/validation \
+    --Transformation TPS --FeatureExtraction ResNet --SequenceModeling BiLSTM --Prediction Attn
+   ```
+
+
+Please refer to the [link](https://github.com/clovaai/deep-text-recognition-benchmark) for more detailed information.
