@@ -38,7 +38,7 @@ Clovaai [deep-text-recognition-benchmark](https://github.com/clovaai/deep-text-r
 4. `train.py`
    - train start
    - 본 프로젝트에서는 TPS-ResNet-BiLSTM-Attn 구조 사용
-     - 해당 내용은 논문 `스포츠 중계 영상 내 OCR 성능개선을 위한 후처리기법 연구` 참고
+     - 해당 내용은 논문 `스포츠 중계 영상 내 문자 인식 모델의 성능 분석 연구 ` 참고
     
     
    ```
